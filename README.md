@@ -1,32 +1,43 @@
-# Arduino Projects
+# Arduino and VPython Integration Projects
 
-This repository contains multiple Arduino sketches for various projects. Below is a brief description of each file and its purpose.
+This repository contains several Python scripts designed to interface with Arduino hardware and visualize data using VPython. Each script demonstrates different functionalities and visualizations. Below is a description of each file and its purpose.
 
 ## Files
 
-### 1. client_server.ino
+### 1a. client_server.ino
 
 This sketch demonstrates a basic client-server communication setup using Arduino. It sets up the Arduino as either a client or a server, capable of sending and receiving data over a network. This can be useful for projects requiring remote data transmission or control.
 
-### 2. sketch_jul5a_joystick_copy_20240705202437.ino
+### 1b. server.py
+  1. This script sets up a serial communication with an Arduino device and reads incoming data packets containing three float values (x, y, z). The script then prints these values to the console.
+  2. This script visualizes voltage data from an Arduino using VPython. It reads the potentiometer value from the Arduino, converts it to a voltage, and visualizes it as the length of a blue cylinder.
+  3. This script sends user-entered commands to an Arduino via serial communication. It reads the commands from the user, appends a carriage return, and sends them to the Arduino.
+
+### 2a. joystick.ino
 
 This sketch is designed to interface with a joystick. It reads the joystick's position and possibly other inputs like button presses, and processes this data to control other components or send it to another device.
 
-### 3. RGB.ino
+### 2b. marble.py 
+These scripts create a virtual room using VPython and animate a marble moving within it using the joystick arduino codes. They handle collisions with the walls and the floor and ceiling, and in marble_4.py, a paddle is added for a game-like interaction.
+
+### 3a. RGB.ino
 
 This sketch controls an RGB LED. It allows for setting the LED to different colors by adjusting the red, green, and blue components. This can be useful for visual feedback in various projects.
 
-### 4. sketch_jul4a_ask_python.ino
+### 3b. RGB.py 
+This script controls an RGB LED connected to an Arduino. It allows the user to input RGB values, which are then sent to the Arduino to set the LED color. The LED's state is visualized using VPython.
 
-This sketch appears to integrate with a Python script or application. It likely sends data to or receives data from a Python program, enabling more complex computations or interactions that are beyond the capabilities of the Arduino alone.
-
-### 5. sketch_jul3a_humanmid.ino
-
+### 4. humidity.ino
 This sketch might be related to MIDI (Musical Instrument Digital Interface) control. It could be used to send or receive MIDI signals, making it useful for music-related projects or interfacing with MIDI-compatible instruments.
+### 4a. humidity.py
+This script reads temperature and humidity data from an Arduino and visualizes it using VPython. It adjusts the length of a cylinder to represent the temperature and updates the display value.
+### 4b. humidity.py
+This script visualize an arrow's movement and a cylinder's length based on temperature and humidity values received from an Arduino. The arrow's angle is adjusted according to the humidity values, and the cylinder represents the temperature.
 
-### 6. sketch_jul2a_dianyabiao.ino
-
-This sketch seems to involve a specific component or sensor, possibly related to voltage measurement or control (dianyabiao translates to "voltmeter" in Chinese). It might be used to read voltage levels or control devices based on voltage inputs.
+### 5a. voltmeter.ino
+This sketch seems to involve a specific component or sensor, possibly related to voltage measurement or control. It might be used to read voltage levels or control devices based on voltage inputs.
+### 5b. voltmeter.py
+These scripts creates a visual voltmeter using VPython. It reads potentiometer values from the Arduino and adjusts the position of an arrow to indicate the voltage level.
 
 ## Getting Started
 
