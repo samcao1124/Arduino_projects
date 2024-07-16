@@ -19,6 +19,7 @@ This sketch is designed to interface with a joystick. It reads the joystick's po
 
 ### 2b. marble.py 
 These scripts create a virtual room using VPython and animate a marble moving within it using the joystick arduino codes. They handle collisions with the walls and the floor and ceiling, and in marble_4.py, a paddle is added for a game-like interaction.
+<img width="752" alt="Screenshot 2024-07-16 at 14 44 34" src="https://github.com/user-attachments/assets/6e8a24b9-5634-48b2-8129-9eb491cac0b3">
 
 ### 3a. RGB.ino
 
@@ -29,6 +30,9 @@ This script controls an RGB LED connected to an Arduino. It allows the user to i
 
 ### 4. humidity.ino
 This sketch might be related to MIDI (Musical Instrument Digital Interface) control. It could be used to send or receive MIDI signals, making it useful for music-related projects or interfacing with MIDI-compatible instruments.
+
+<img width="286" alt="Screenshot 2024-07-16 at 14 39 45" src="https://github.com/user-attachments/assets/d67cddbd-0660-477c-ac42-067dfb2480b2">
+
 ### 4a. humidity.py
 This script reads temperature and humidity data from an Arduino and visualizes it using VPython. It adjusts the length of a cylinder to represent the temperature and updates the display value.
 ### 4b. humidity.py
@@ -38,6 +42,8 @@ This script visualize an arrow's movement and a cylinder's length based on tempe
 This sketch seems to involve a specific component or sensor, possibly related to voltage measurement or control. It might be used to read voltage levels or control devices based on voltage inputs.
 ### 5b. voltmeter.py
 These scripts creates a visual voltmeter using VPython. It reads potentiometer values from the Arduino and adjusts the position of an arrow to indicate the voltage level.
+
+<img width="437" alt="Screenshot 2024-07-16 at 14 42 11" src="https://github.com/user-attachments/assets/abe080e8-7817-4be0-a6f1-d73d67c7f315">
 
 ## Getting Started
 
