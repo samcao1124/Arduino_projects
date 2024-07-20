@@ -9,9 +9,9 @@ This repository contains several Python scripts designed to interface with Ardui
 This sketch demonstrates a basic client-server communication setup using Arduino. It sets up the Arduino as either a client or a server, capable of sending and receiving data over a network. This can be useful for projects requiring remote data transmission or control.
 
 ### 1b. client_server.py
-  1. This script sets up a serial communication with an Arduino device and reads incoming data packets containing three float values (x, y, z). The script then prints these values to the console.
-  2. This script visualizes voltage data from an Arduino using VPython. It reads the potentiometer value from the Arduino, converts it to a voltage, and visualizes it as the length of a blue cylinder.
-  3. This script sends user-entered commands to an Arduino via serial communication. It reads the commands from the user, appends a carriage return, and sends them to the Arduino.
+  1. **client_1: **This script sets up a serial communication with an Arduino device and reads incoming data packets containing three float values (x, y, z). The script then prints these values to the console.
+  2. **client_2: **This script visualizes voltage data from an Arduino using VPython. It reads the potentiometer value from the Arduino, converts it to a voltage, and visualizes it as the length of a blue cylinder.
+  3. **client_3: **This script sends user-entered commands to an Arduino via serial communication. It reads the commands from the user, appends a carriage return, and sends them to the Arduino.
 
 ### 2a. joystick.ino
 
