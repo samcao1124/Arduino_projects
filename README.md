@@ -40,7 +40,7 @@ This script visualize an arrow's movement and a cylinder's length based on tempe
 
 ### 5a. voltmeter.ino
 This sketch seems to involve a specific component or sensor, possibly related to voltage measurement or control. It might be used to read voltage levels or control devices based on voltage inputs.
-### 5b. voltmeter.py
+### 5b. voltmeter_1 & voltmeter_2.py
 These scripts creates a visual voltmeter using VPython. It reads potentiometer values from the Arduino and adjusts the position of an arrow to indicate the voltage level.
 
 <img width="437" alt="Screenshot 2024-07-16 at 14 42 11" src="https://github.com/user-attachments/assets/abe080e8-7817-4be0-a6f1-d73d67c7f315">
