@@ -8,17 +8,17 @@ This repository contains several Python scripts designed to interface with Ardui
 
 This sketch demonstrates a basic client-server communication setup using Arduino. It sets up the Arduino as either a client or a server, capable of sending and receiving data over a network. This can be useful for projects requiring remote data transmission or control.
 
-### 1b. server.py
+### 1b. client_server.py
   1. This script sets up a serial communication with an Arduino device and reads incoming data packets containing three float values (x, y, z). The script then prints these values to the console.
   2. This script visualizes voltage data from an Arduino using VPython. It reads the potentiometer value from the Arduino, converts it to a voltage, and visualizes it as the length of a blue cylinder.
   3. This script sends user-entered commands to an Arduino via serial communication. It reads the commands from the user, appends a carriage return, and sends them to the Arduino.
 
 ### 2a. joystick.ino
 
-This sketch is designed to interface with a joystick. It reads the joystick's position and possibly other inputs like button presses, and processes this data to control other components or send it to another device.
+This sketch is designed to interface with a joystick. It reads the joystick's position and possibly other inputs like button presses, and processes this data to control other components or send it to another device. The joystick will also be served as a part of the marble game.
 
 ### 2b. marble.py 
-These scripts create a virtual room using VPython and animate a marble moving within it using the joystick arduino codes. They handle collisions with the walls and the floor and ceiling, and in marble_4.py, a paddle is added for a game-like interaction.
+These scripts create a virtual room using VPython and animate a marble moving within it using the joystick arduino codes. They handle collisions with the walls and the floor and ceiling, and in marble_4.py, a paddle is added for a game-like interaction. The game is controlled by the joystick project earlier. 
 <img width="752" alt="Screenshot 2024-07-16 at 14 44 34" src="https://github.com/user-attachments/assets/6e8a24b9-5634-48b2-8129-9eb491cac0b3">
 
 ### 3a. RGB.ino
@@ -33,9 +33,9 @@ This sketch might be related to MIDI (Musical Instrument Digital Interface) cont
 
 <img width="286" alt="Screenshot 2024-07-16 at 14 39 45" src="https://github.com/user-attachments/assets/d67cddbd-0660-477c-ac42-067dfb2480b2">
 
-### 4a. humidity.py
+### 4a. humidity_1.py
 This script reads temperature and humidity data from an Arduino and visualizes it using VPython. It adjusts the length of a cylinder to represent the temperature and updates the display value.
-### 4b. humidity.py
+### 4b. humidity_2.py
 This script visualize an arrow's movement and a cylinder's length based on temperature and humidity values received from an Arduino. The arrow's angle is adjusted according to the humidity values, and the cylinder represents the temperature.
 
 ### 5a. voltmeter.ino
